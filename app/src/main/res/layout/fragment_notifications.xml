@@ -5,6 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/purple_200"
         tools:context=".ui.notifications.NotificationsFragment">
 
     <TextView
@@ -15,7 +16,8 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textSize="32sp"
+            android:text="Profile"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
