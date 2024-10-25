@@ -6,4 +6,6 @@
     <string name="home_page">Home Page</string>
     <string name="profile">Profile</string>
     <string name="champs">Champs</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="champ_select">Champ Select</string>
 </resources>
