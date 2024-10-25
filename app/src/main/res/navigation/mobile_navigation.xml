@@ -22,4 +22,10 @@
             android:name="com.example.leaguecompanionapp.ui.notifications.NotificationsFragment"
             android:label="@string/profile"
             tools:layout="@layout/fragment_notifications"/>
+
+    <fragment
+            android:id="@+id/fragment_login"
+            android:name="com.example.leaguecompanionapp.ui.home.Fragment_Login"
+            android:label="@string/login_page"
+            tools:layout="@layout/fragment__login"/>
 </navigation>
