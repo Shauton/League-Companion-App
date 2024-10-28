@@ -1,4 +1,4 @@
-package com.example.leaguecompanionapp.ui.home;
+package com.example.leaguecompanionapp.ui.Login;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
@@ -7,11 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.example.leaguecompanionapp.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Fragment_Login#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class Fragment_Login extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
