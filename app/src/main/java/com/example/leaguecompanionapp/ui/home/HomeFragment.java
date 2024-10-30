@@ -24,8 +24,8 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.signupButton;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final Button SignUpButton = binding.signupButton;
+        homeViewModel.getText().observe(getViewLifecycleOwner(), SignUpButton::setText);
 
         return root;
     }
