@@ -9,7 +9,7 @@
         android:background="@drawable/profileimage"
         android:gravity="center"
         android:padding="16dp"
-        tools:context=".MainActivity">
+        tools:context=".LoginFragment">
 
 
     <LinearLayout
@@ -22,6 +22,7 @@
                 android:layout_width="240dp"
                 android:layout_height="240dp"
                 android:layout_marginBottom="24dp"
+                android:elevation="20dp"
                 android:src="@drawable/appicon"
         />
 
@@ -36,6 +37,7 @@
                 android:background="@drawable/rounded_box"
                 android:padding="8dp"
                 android:inputType="text"
+                android:elevation="20dp"
                 android:id="@+id/user_input"
         />
 
@@ -50,6 +52,7 @@
                 android:background="@drawable/rounded_box"
                 android:padding="8dp"
                 android:inputType="textPassword"
+                android:elevation="20dp"
                 android:id="@+id/pass_input"
         />
 
@@ -60,15 +63,17 @@
                 android:text="@string/login"
                 android:backgroundTint="@color/royal_blue"
                 android:textSize="20sp"
+                android:elevation="20dp"
                 android:id="@+id/login_button"
         />
 
         <Button
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/register"
-                android:backgroundTint="@color/royal_blue"
-                android:textSize="20sp"
+                android:text="Not a User? Sign Up"
+                android:backgroundTint="@color/transparent"
+                android:textSize="16sp"
+                android:elevation="20dp"
                 android:id="@+id/register_button"
         />
 

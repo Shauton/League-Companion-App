@@ -7,41 +7,32 @@
 
     <fragment
             android:id="@+id/navigation_home"
-            android:name="com.example.leaguecompanionapp.ui.home.HomeFragment"
+            android:name="com.example.leaguecompanionapp.HomeFragment"
             android:label="@string/title_home"
-            tools:layout="@layout/fragment_home">
-        <action android:id="@+id/action_navigation_home_to_navigation_login" app:destination="@id/navigation_login"/>
-    </fragment>
+            tools:layout="@layout/fragment_home"/>
 
     <fragment
             android:id="@+id/navigation_dashboard"
-            android:name="com.example.leaguecompanionapp.ui.dashboard.DashboardFragment"
+            android:name="com.example.leaguecompanionapp.DashboardFragment"
             android:label="@string/champ_select"
             tools:layout="@layout/fragment_dashboard"/>
 
     <fragment
             android:id="@+id/navigation_profile"
-            android:name="com.example.leaguecompanionapp.ui.profile.ProfileFragment"
+            android:name="com.example.leaguecompanionapp.ProfileFragment"
             android:label="@string/profile"
             tools:layout="@layout/fragment_profile"/>
 
     <fragment
             android:id="@+id/navigation_login"
-            android:name="com.example.leaguecompanionapp.ui.login.LoginFragment"
+            android:name="com.example.leaguecompanionapp.LoginFragment"
             android:label="@string/login_page"
-            tools:layout="@layout/fragment__login">
-        <action android:id="@+id/action_navigation_login_to_navigation_signup" app:destination="@id/navigation_signup"/>
-        <action android:id="@+id/action_navigation_login_to_navigation_dashboard"
-                app:destination="@id/navigation_dashboard"/>
-    </fragment>
+            tools:layout="@layout/fragment_login"/>
 
     <fragment
             android:id="@+id/navigation_signup"
-            android:name="com.example.leaguecompanionapp.ui.signup.SignUpFragment"
+            android:name="com.example.leaguecompanionapp.SignUpFragment"
             android:label="@string/register"
-            tools:layout="@layout/fragment_sign_up">
-        <action android:id="@+id/action_navigation_signup_to_navigation_dashboard"
-                app:destination="@id/navigation_dashboard"/>
-    </fragment>
+            tools:layout="@layout/fragment_sign_up"/>
 
 </navigation>

@@ -6,23 +6,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/wallpaperjarvan"
-        tools:context=".ui.home.HomeFragment">
+        tools:context=".HomeFragment">
 
-    <Button
-            android:id="@+id/signup_button"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:textAlignment="gravity"
-            android:textSize="28sp"
-            android:textColor="@color/yellow"
-            android:text="@string/sign_up"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:backgroundTint="@color/royal_blue"/>
 </FrameLayout>
