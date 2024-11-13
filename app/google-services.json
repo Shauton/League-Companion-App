@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1046704907760",
+    "project_id": "league-knights-database",
+    "storage_bucket": "league-knights-database.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046704907760:android:5ad2d0ca6aedb41830a935",
+        "android_client_info": {
+          "package_name": "com.example.leaguecompanionapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdmuReu4VDQ6rVjzO-BVpn6mqWCSCzMrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

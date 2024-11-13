@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FirebaseConfiguration">
+    <option name="connectionConfigurations">
+      <map>
+        <entry key="5af0e226-79e7-4d02-a02a-9a84b180de20">
+          <value>
+            <FirebaseConfigInternal>
+              <option name="id" value="5af0e226-79e7-4d02-a02a-9a84b180de20" />
+              <option name="label" value="League Knight Companion" />
+              <option name="serviceAccountPath" value="$USER_HOME$/Downloads/league-knights-database-firebase-adminsdk-llsxr-497ed56e8e.json" />
+            </FirebaseConfigInternal>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="version" value="2" />
+  </component>
+</project>
