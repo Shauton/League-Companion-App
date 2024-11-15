@@ -38,7 +38,7 @@
                 android:padding="8dp"
                 android:inputType="text"
                 android:elevation="20dp"
-                android:id="@+id/user_input"
+                android:id="@+id/signup_username"
         />
 
         <EditText
@@ -53,7 +53,7 @@
                 android:padding="8dp"
                 android:inputType="textPassword"
                 android:elevation="20dp"
-                android:id="@+id/pass_input"
+                android:id="@+id/signup_password"
         />
 
         <EditText
@@ -68,7 +68,7 @@
                 android:padding="8dp"
                 android:inputType="textPassword"
                 android:elevation="20dp"
-                android:id="@+id/conpass_input"
+                android:id="@+id/signup_conPassword"
         />
 
         <Button
@@ -79,17 +79,17 @@
                 android:backgroundTint="@color/royal_blue"
                 android:textSize="20sp"
                 android:elevation="20dp"
-                android:id="@+id/register_button"
+                android:id="@+id/signup_button"
         />
 
         <Button
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Already a user? Login"
+                android:text="@string/already_a_user_login"
                 android:backgroundTint="@color/transparent"
                 android:textSize="16sp"
                 android:elevation="20dp"
-                android:id="@+id/already_user_button"
+                android:id="@+id/alreadyUser_button"
         />
 
     </LinearLayout>
