@@ -20,4 +20,32 @@
     <string name="quick_select">Quick Select</string>
     <string name="already_a_user_login">Already a user? Login</string>
     <string name="not_a_user_sign_up">Not a User? Sign Up</string>
+
+    <string-array name="champion_name_list">
+        <item>Aatrox</item>
+        <item>Ahri</item>
+        <item>Akali</item>
+        <item>Akshan</item>
+        <item>Alistar</item>
+        <item>Ambessa</item>
+        <item>Amumu</item>
+        <item>Anivia</item>
+        <item>Annie</item>
+        <item>Aphelios</item>
+        <item>Ashe</item>
+    </string-array>
+
+    <string-array name="champion_title_list">
+        <item>the Darkin Blade</item>
+        <item>the Nine-Tailed Fox</item>
+        <item>the Rogue Assassin</item>
+        <item>the Rogue Sentinel</item>
+        <item>the Minotaur"</item>
+        <item>Matriarch of War</item>
+        <item>the Sad Mummy</item>
+        <item>the Cryophoenix</item>
+        <item>the Dark Child</item>
+        <item>Weapon of the Faithful</item>
+        <item>the Frost Archer</item>
+    </string-array>
 </resources>
