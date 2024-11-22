@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import java.util.Objects;
+
 public class SignUpFragment extends Fragment {
 
     EditText signupUsername, signupPassword, signupConfirmPassword;
@@ -25,11 +27,11 @@ public class SignUpFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_sign_up, container, false);
 
-        signupUsername = (EditText) view.findViewById(R.id.signup_username);
-        signupPassword = (EditText) view.findViewById(R.id.signup_password);
-        signupConfirmPassword = (EditText) view.findViewById(R.id.signup_conPassword);
-        signupButton = (Button) view.findViewById(R.id.signup_button);
-        alreadyUser = (Button) view.findViewById(R.id.alreadyUser_button);
+        signupUsername = view.findViewById(R.id.signup_username);
+        signupPassword = view.findViewById(R.id.signup_password);
+        signupConfirmPassword = view.findViewById(R.id.signup_conPassword);
+        signupButton = view.findViewById(R.id.signup_button);
+        alreadyUser = view.findViewById(R.id.alreadyUser_button);
 
         databaseHelper = new DatabaseHelper(getActivity());
 
@@ -47,7 +49,7 @@ public class SignUpFragment extends Fragment {
                 else {
                     if (password.equals(confirmPassword)) {
                         Boolean checkUser = databaseHelper.checkUser(username);
-                        if (checkUser == false) {
+                        if (!checkUser) {
                             Boolean insert = databaseHelper.insertUser(username, password);
                             if (insert) {
                                 Toast.makeText(view.getContext(), "User successfully Made", Toast.LENGTH_SHORT).show();
@@ -68,12 +70,7 @@ public class SignUpFragment extends Fragment {
             }
         });
 
-        alreadyUser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                replaceFragment(new LoginFragment());
-            }
-        });
+        alreadyUser.setOnClickListener(view1 -> replaceFragment(new LoginFragment()));
 
         return view;
     }
@@ -86,6 +83,6 @@ public class SignUpFragment extends Fragment {
     }
 
     private FragmentManager getSupportFragmentManager() {
-        return getActivity().getSupportFragmentManager();
+        return Objects.requireNonNull(getActivity()).getSupportFragmentManager();
     }
 }

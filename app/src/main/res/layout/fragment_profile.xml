@@ -1,27 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/profileimage"
-        tools:context=".ProfileFragment">
+        android:gravity="center"
+        android:padding="16dp"
+        tools:context=".LoginFragment">
 
-    <TextView
-            android:id="@+id/text_profile"
-            android:layout_width="wrap_content"
+
+    <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:textAlignment="center"
-            android:textSize="32sp"
-            android:textColor="@color/yellow"
-            android:text="@string/profile"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Profile"
+                android:textSize="36dp"
+                android:textColor="@color/royal_blue"
+        />
+
+        <ImageView
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="16dp"
+                android:elevation="20dp"
+                android:src="@drawable/appicon"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Update Username"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="28sp"
+                android:background="@drawable/rounded_box"
+                android:padding="8dp"
+                android:inputType="text"
+                android:elevation="20dp"
+                android:id="@+id/update_username"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Update Password"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="28sp"
+                android:background="@drawable/rounded_box"
+                android:padding="8dp"
+                android:inputType="textPassword"
+                android:elevation="20dp"
+                android:id="@+id/update_password"
+        />
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:text="Save"
+                android:backgroundTint="@color/royal_blue"
+                android:textSize="20sp"
+                android:elevation="20dp"
+                android:id="@+id/save_button"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

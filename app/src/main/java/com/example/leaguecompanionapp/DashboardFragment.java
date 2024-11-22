@@ -15,6 +15,7 @@ import com.example.leaguecompanionapp.databinding.FragmentDashboardBinding;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class DashboardFragment extends Fragment implements ChampViewInterface {
 
@@ -22,7 +23,7 @@ public class DashboardFragment extends Fragment implements ChampViewInterface {
     ArrayList<Champion> champions = new ArrayList<>();
     RecyclerView recyclerView;
 
-    int[] champImages = {
+    int[] champTiles = {
             R.drawable.aatrox_tile,
             R.drawable.ahri_tile,
             R.drawable.akali_tile,
@@ -34,6 +35,7 @@ public class DashboardFragment extends Fragment implements ChampViewInterface {
             R.drawable.annie_tile,
             R.drawable.aphelios_tile,
             R.drawable.ashe_tile};
+
 
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -66,17 +68,19 @@ public class DashboardFragment extends Fragment implements ChampViewInterface {
             champions.add(new Champion(
                     champNames[i],
                     champTitles[i],
-                    champImages[i])
+                    champTiles[i])
             );
         }
     }
 
     @Override
     public void onItemClicked(int position) {
-        replaceFragment(new HomeFragment());
+        if (Objects.equals(champions.get(position).name, champions.get(0).name)) {
+            replaceFragment(new AatroxFragment());
+        }
     }
 
-    private  void replaceFragment(Fragment fragment) {
+    private void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frame_layout, fragment);
@@ -86,5 +90,4 @@ public class DashboardFragment extends Fragment implements ChampViewInterface {
     private FragmentManager getSupportFragmentManager() {
         return getActivity().getSupportFragmentManager();
     }
-
 }

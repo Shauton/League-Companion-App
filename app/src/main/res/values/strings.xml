@@ -20,6 +20,10 @@
     <string name="quick_select">Quick Select</string>
     <string name="already_a_user_login">Already a user? Login</string>
     <string name="not_a_user_sign_up">Not a User? Sign Up</string>
+    <string name="Aatrox_Blurb">Once honored defenders of Shurima against the Void, Aatrox and his brethren would
+        eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But
+        after centuries of imprisonment, Aatrox was the first to find...
+    </string>
 
     <string-array name="champion_name_list">
         <item>Aatrox</item>
