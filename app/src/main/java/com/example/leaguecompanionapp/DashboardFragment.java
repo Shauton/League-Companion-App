@@ -78,6 +78,36 @@ public class DashboardFragment extends Fragment implements ChampViewInterface {
         if (Objects.equals(champions.get(position).name, champions.get(0).name)) {
             replaceFragment(new AatroxFragment());
         }
+        else if (Objects.equals(champions.get(position).name, champions.get(1).name)) {
+            replaceFragment(new AhriFragment());
+        }
+        else if (Objects.equals(champions.get(position).name, champions.get(2).name)) {
+            replaceFragment(new AkaliFragment());
+        }
+        else if (Objects.equals(champions.get(position).name, champions.get(3).name)) {
+            replaceFragment(new AkshanFragment());
+        }
+        else if (Objects.equals(champions.get(position).name, champions.get(4).name)) {
+            replaceFragment(new AlistarFragment());
+        }
+        else if (Objects.equals(champions.get(position).name, champions.get(5).name)) {
+            replaceFragment(new AmbessaFragment());
+        }
+        else if (Objects.equals(champions.get(position).name, champions.get(6).name)) {
+            replaceFragment(new AmumuFragment());
+        }
+        else if (Objects.equals(champions.get(position).name, champions.get(7).name)) {
+            replaceFragment(new AniviaFragment());
+        }
+        else if (Objects.equals(champions.get(position).name, champions.get(8).name)) {
+            replaceFragment(new AnnieFragment());
+        }
+        else if (Objects.equals(champions.get(position).name, champions.get(9).name)) {
+            replaceFragment(new ApheliosFragment());
+        }
+        else if (Objects.equals(champions.get(position).name, champions.get(10).name)) {
+            replaceFragment(new AsheFragment());
+        }
     }
 
     private void replaceFragment(Fragment fragment) {
